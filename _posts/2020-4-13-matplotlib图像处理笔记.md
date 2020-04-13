@@ -1,12 +1,14 @@
 ---
 layout:     post
-title:     Matplotlib图像处理笔记
-subtitle:   强大的python图像处理包
+title:     科学数据处理笔记
+subtitle:   ~懒惰的智慧~
 date:       2020-4-13
 author:     Glider
 header-img: img/废弃窑洞.jpg
 catalog: true
 tags:
+    - matplotlib
+    - numpy
     - python
     - blog
 ---
@@ -29,10 +31,17 @@ ax0 = ax[0].imshow(a,cmap = 'binary')  #binary是1黑0白,  gray是相反的
 ax1 = ax[1].imshow(b,cmap = 'binary')
 fig.colorbar(ax0,ax = [ax[0],ax[1]])
 plt.show()
-
-
 ```
 
+## 矩阵进行升采样(扩展)
+```
+def change_pix(matrix,dpi = (100,100)):
+    new_im = Image.fromarray(matrix)
+    new_im = new_im.resize(size=dpi, resample=Image.BOX)
+    matrix_changed = np.asarray(new_im)
+    return matrix_changed
+
+```
 
 
 # 结语
