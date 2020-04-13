@@ -43,6 +43,14 @@ def change_pix(matrix,dpi = (100,100)):
 
 ```
 
+# 矩阵数据统计直方图
+```
+a = np.random.randn(10000)
+
+plt.hist(a, bins=500, edgecolor='None', facecolor='black')
+plt.show()
+```
+
 
 # 结语
 以后会在这里更新. 
