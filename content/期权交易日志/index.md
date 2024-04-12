@@ -1,8 +1,8 @@
 +++
 title = "期权交易日志-1"
 description = "挨打……"
-date = 2024-4-12
-updated = 2024-4-12
+date = 2024-04-12
+updated = 2024-04-12
 draft = false
 
 [taxonomies]
@@ -36,15 +36,15 @@ toc = true
 
 交易所是某安，标的是eth，购入的日期为24-4-1，行权日期为24-5-31
 
-当时的波动率偏斜很离谱，市场处于牛市前期，所以斜率非常陡，
+当时的波动率偏斜很离谱，市场处于牛市前期，所以斜率非常陡，24-5-31的波动率如图：
 
+![1712891687797](image/index/1712891687797.png)
 
 # 图片
 
 {{ img(src="./img/huashou1.jpg" alt="Ferris is Happy" h=300 w=300) }}
 
 <!-- ![画手](./img/huashou1.jpg) -->
-
 
 # 代码
 
