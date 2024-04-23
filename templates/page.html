@@ -87,6 +87,13 @@
     {%- block page_footer %}
     {{- macros::footer(page=page, config=config) }}
     {%- endblock page_footer %}
+    <script src="https://utteranc.es/client.js"
+    repo="bbpp222006/bbpp222006.github.io"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
 
     {%- block comments_body %}
     {%- if config.extra.comments.hyvor %}
@@ -193,13 +200,6 @@
         {%- endif %}
         {%- endfor %}
       </div>
-      <script src="https://utteranc.es/client.js"
-        repo="bbpp222006/bbpp222006.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-      </script>
     </div>
     {%- endif %}
     {%- endif %}
