@@ -92,14 +92,14 @@
     {%- block comments_body %}
     {%- if config.extra.comments.hyvor %}
     <hyvor-talk-comments website-id={{ config.extra.comments.hyvor }} page-id={{ page.slug }}{%- if config.extra.comments.hyvorcolor %} colors="{{ config.extra.comments.hyvorcolor }}"{%- endif %}></hyvor-talk-comments>
+    {%- endif %}
     <script src="https://utteranc.es/client.js"
     repo="bbpp222006/bbpp222006.github.io"
     issue-term="pathname"
     theme="github-light"
     crossorigin="anonymous"
     async>
-  </script>
-    {%- endif %}
+    </script>
     {%- endblock comments_body %}
     </article>
     {%- block toc %}
