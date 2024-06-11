@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Glider的博客 - 服务器</title>
+    <subtitle>I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://bbpp222006.github.io/tags/fu-wu-qi/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://bbpp222006.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2019-10-31T00:00:00+00:00</updated>
+    <id>https://bbpp222006.github.io/tags/fu-wu-qi/atom.xml</id>
+    <entry xml:lang="en">
+        <title>常用服务器命令备份</title>
+        <published>2019-10-31T00:00:00+00:00</published>
+        <updated>2019-10-31T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bbpp222006.github.io/常用服务器脚本命令收集/"/>
+        <id>https://bbpp222006.github.io/常用服务器脚本命令收集/</id>
+        
+        <content type="html" xml:base="https://bbpp222006.github.io/常用服务器脚本命令收集/">&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;网易云脚本&lt;br &#x2F;&gt;
+&lt;code&gt;wget -N --no-check-certificate https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XIU2&#x2F;SHELL&#x2F;master&#x2F;unblock163.sh &amp;amp;&amp;amp; chmod +x unblock163.sh &amp;amp;&amp;amp; bash unblock163.sh&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;ssr安装&lt;br &#x2F;&gt;
+&lt;code&gt;wget -N --no-check-certificate https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;ToyoDAdoubi&#x2F;doubi&#x2F;master&#x2F;ssr.sh &amp;amp;&amp;amp; chmod +x ssr.sh &amp;amp;&amp;amp; sudo bash ssr.sh&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;v2ray带伪装脚本&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre class=&quot;z-code&quot;&gt;&lt;code&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;wget https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;hijkpw&#x2F;scripts&#x2F;master&#x2F;centos_install_v2ray2.sh &amp;amp;&amp;amp; chmod +x centos_install_v2ray2.sh &amp;amp;&amp;amp; sudo bash centos_install_v2ray2.sh
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;各种魔改内核加速脚本&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre class=&quot;z-code&quot;&gt;&lt;code&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;wget -N --no-check-certificate https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;chiakge&#x2F;Linux-NetSpeed&#x2F;master&#x2F;tcp.sh &amp;amp;&amp;amp; chmod +x tcp.sh &amp;amp;&amp;amp; sudo bash tcp.sh
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;服务器端口转发 (第一个只支持tcp，第二个tcp，udp都支持)&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre class=&quot;z-code&quot;&gt;&lt;code&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;wget -N --no-check-certificate https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;ToyoDAdoubiBackup&#x2F;doubi&#x2F;master&#x2F;haproxy.sh &amp;amp;&amp;amp; chmod +x haproxy.sh &amp;amp;&amp;amp; bash haproxy.sh
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;wget -N --no-check-certificate https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;ToyoDAdoubiBackup&#x2F;doubi&#x2F;master&#x2F;iptables-pf.sh &amp;amp;&amp;amp; chmod +x iptables-pf.sh &amp;amp;&amp;amp; bash iptables-pf.sh
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;以下为centos原生支持的firewalld进行转发功能（在内存较小的机子上运行这个，例如nat的小鸡）&lt;&#x2F;p&gt;
+&lt;pre class=&quot;z-code&quot;&gt;&lt;code&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;#安装
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;yum install -y firewalld
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;systemctl enable firewalld
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;systemctl start firewalld
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;#查看运行状态
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;firewall-cmd --state
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;firewall-cmd --list-all #查看当前规则
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;firewall-cmd --zone=public --list-ports  # 查看开放的端口
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;#规则管理
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;echo &amp;#39;net.ipv4.ip_forward = 1&amp;#39; &amp;gt;&amp;gt; &#x2F;etc&#x2F;sysctl.conf
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;sysctl -p
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;firewall-cmd --permanent --add-masquerade
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;# 8080可以改成其他端口
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;firewall-cmd --permanent --add-port=8080&#x2F;tcp
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;firewall-cmd --permanent --add-port=8080&#x2F;tcp
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;# 8080和上面保持一致，国外ip改成你国外vps的ip，443改成国外ss&#x2F;ssr&#x2F;v2ray等软件的端口
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;firewall-cmd --permanent --add-forward-port=port=8080:proto=tcp:toaddr=国外ip:toport=443
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;firewall-cmd --permanent --add-forward-port=port=8080:proto=udp:toaddr=国外ip:toport=443
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;# 移除添加的端口
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;firewall-cmd --permanent --remove-port=80&#x2F;tcp
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;# 重载服务
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;firewall-cmd --reload
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;服务器贴吧签到重启&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre class=&quot;z-code&quot;&gt;&lt;code&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;service docker start
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;docker-compose up -d
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;7&quot;&gt;
+&lt;li&gt;服务器例行检查&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre class=&quot;z-code&quot;&gt;&lt;code&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;cat &#x2F;var&#x2F;log&#x2F;secure | grep -i &amp;quot;accepted password&amp;quot; 
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;who
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;8&quot;&gt;
+&lt;li&gt;switch_lan_play维护&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre class=&quot;z-code&quot;&gt;&lt;code&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;cd &#x2F;root&#x2F;switch-lan-play&#x2F;server
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;git pull
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;npm run build
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;npm run server
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+</feed>

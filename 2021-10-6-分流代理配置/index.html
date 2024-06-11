@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://bbpp222006.github.io/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://bbpp222006.github.io/abridge.css?h=d34a40bc4242778b5e29" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://bbpp222006.github.io" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://bbpp222006.github.io/manifest.min.json" />
+  <link rel="mask-icon" href="https://bbpp222006.github.io/safari-pinned-tab.svg" color="#ff9900" />
+  <link rel="icon" type="image/svg+xml" href="https://bbpp222006.github.io/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://bbpp222006.github.io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://bbpp222006.github.io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://bbpp222006.github.io/favicon-16x16.png" />
+  <link rel="alternate" type="application/atom+xml" title="Glider的博客 Atom/RSS Feed" href="https://bbpp222006.github.io/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>分流代理配置 | Glider的博客</title>
+  <meta name="author" content="Glider" />
+  <meta name="copyright" content="Glider的博客" />
+  <meta name="description" content="I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?" />
+  <link rel="canonical" href="https://bbpp222006.github.io/2021-10-6-分流代理配置/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta name="google-site-verification" content="Your Google Site verification code." />
+  <meta name="msvalidate.01" content="Your Bing Site verification code." />
+  <meta property="og:url" content="https://bbpp222006.github.io/2021-10-6-分流代理配置/" />
+  <meta name="twitter:url" content="https://bbpp222006.github.io/2021-10-6-分流代理配置/" />
+  <meta property="og:description" content="I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?" />
+  <meta name="twitter:description" content="I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?" />
+  <meta property="og:title" content="分流代理配置 | Glider的博客" />
+  <meta name="twitter:title" content="分流代理配置 | Glider的博客" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://bbpp222006.github.io/banner.png" />
+  <meta property="og:image" content="https://bbpp222006.github.io/banner.png" />
+  <meta property="og:site_name" content="Glider的博客" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2021-10-06" />
+  <meta name="twitter:site" content="@your-user-name" />
+  <meta name="twitter:creator" content="@your-user-name" />
+  <script defer src="https://bbpp222006.github.io/js/abridge.min.js?h=1a12cf684ae4ed40434f" integrity="sha384-ZsreuwU2rKTp7gC4bTf5sYz+3AjMym99XDa/B5wa08fCzLVVX+NDaTsTeyLXseDG"></script>
+  <noscript><link rel="stylesheet" href="https://bbpp222006.github.io/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://bbpp222006.github.io" title="Glider的博客"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#f90" viewBox="0 0 96 96" width="28" height="28"><path stroke-width="14" d="M14 99 46 7h4l32 92"/><path stroke-width="9" d="M-3 82c43-26 59-26 102 0"/><path stroke-linecap="round" stroke-width="1.5" d="M94 72v7m-5-9.8v7m-5-9.8v7.1M79 64v7M63 57.7v7m-5-8.2v7m-5-7.8v7m-5-7.2v7m-5-6.7v7m-5-6.3v7m-5-5.8v7M17 64v7m-5-4.6v7m-5-4.2v7M2 72v7"/></svg>bridge</a></h1></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://bbpp222006.github.io/about/"> About </a></li><li><a class="s110" href="https://bbpp222006.github.io/archive/"> Posts </a></li><li><a class="s110" href="https://bbpp222006.github.io/tags/"> Tags </a></li><li><i type="reset" id="mode" class="js svgs adjust"></i></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="svgs search"></button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://bbpp222006.github.io/2021-10-6-分流代理配置/">分流代理配置</a></h1>
+
+      <span class="s95"> Glider <span class="rpad"></span> 十月 06, 2021 <span class="rpad"></span></span>
+
+    
+
+
+<h1 id="前言">前言</h1>
+<p>虽然学校内的环境很美好，但免不了需要外地进行访问的问题</p>
+<p>比如北邮人pt站，只能教育网ipv6访问。</p>
+<p>但学校内部没有适合放硬盘的地方，因此需要一个中间机器进行转发。</p>
+<p>这主要涉及到俩个方面：</p>
+<ul>
+<li>校外如何访问校内的设备（vpn）</li>
+<li>校内校外的设备如何进行设置，以达到分流的目的</li>
+</ul>
+<p>这篇文章主要记录关于第二个问题，博主的解决办法</p>
+<h1 id="正文">正文</h1>
+<p>硬件条件：</p>
+<ul>
+<li>校内一台树莓派（archlinux）    记为A</li>
+<li>校外一台linux系统的服务器（archlinux）  记为B</li>
+<li>校外一台win10台式机 记为C</li>
+</ul>
+<p>网络环境：</p>
+<ul>
+<li>A
+<ul>
+<li>能够正常访问北邮人等教育网专用网站</li>
+<li>拥有ipv6与ipv4</li>
+</ul>
+</li>
+<li>B和C
+<ul>
+<li>能够通过ip直接访问A（vpn已架设好）</li>
+<li>只有ipv4</li>
+<li>BC处于同一局域网下</li>
+</ul>
+</li>
+</ul>
+<h2 id="A的配置">A的配置</h2>
+<p>全部通过docker进行，架设http代理，命令如下</p>
+<pre class="z-code"><code><span class="z-text z-plain">docker run -d --name tinyproxy -p 8888:8888 -e &quot;ALLOWED=0.0.0.0/0&quot; ajoergensen/tinyproxy
+</span></code></pre>
+<h2 id="B的配置">B的配置</h2>
+<p>全部通过docker进行，使用v2raya进行分流代理，命令如下</p>
+<pre class="z-code"><code><span class="z-text z-plain">docker run -d \
+</span><span class="z-text z-plain">  -p 2017:2017 \
+</span><span class="z-text z-plain">  -p 20170-20180:20170-20180 \
+</span><span class="z-text z-plain">  --restart=always \
+</span><span class="z-text z-plain">  --name v2raya \
+</span><span class="z-text z-plain">  -v /mnt/bignas/v2raya:/etc/v2raya \
+</span><span class="z-text z-plain">  -e V2RAYA_V2RAY_BIN=/etc/v2raya/xray \
+</span><span class="z-text z-plain">  mzz2017/v2raya
+</span></code></pre>
+<p><em><strong>注意</strong></em>：原本的镜像没提供xray内核，需要先<strong>自行下载xray</strong>然后映射进去，同时给定环境变量，强制使用xray。  <a rel="noopener" target="_blank" href="https://v2raya.org/docs/prologue/installation/docker/">v2raya说明文档</a></p>
+<h3 id="v2raya_web配置">v2raya web配置</h3>
+<p><img src="../images/2021-10-06-21-18-26.png" alt="" /></p>
+<p>进去之后配置，博主的配置如下，仅供参考</p>
+<pre class="z-code"><code><span class="z-text z-plain">outbound:hust=http(address: 10.243.113.248, port: 8888)
+</span><span class="z-text z-plain">default: proxy # 默认走代理
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain"># pt站点
+</span><span class="z-text z-plain">domain(domain: pt.keepfrds.com,domain: m-team.cc)-&gt;direct
+</span><span class="z-text z-plain">domain(domain: hudbt.hust.edu.cn, domain: byr.pt)-&gt;hust
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain"># 国内，本地
+</span><span class="z-text z-plain">domain(geosite:cn)-&gt;direct
+</span><span class="z-text z-plain">ip(geoip:private, geoip:cn)-&gt;direct
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain"># 学术
+</span><span class="z-text z-plain">domain(geosite:category-scholar-!cn, geosite:category-scholar-cn)-&gt;hust
+</span></code></pre>
+<p>这里的 10.243.113.248是A的vpn地址</p>
+<p>这个分流规则非常强大，配置比较复杂，<a rel="noopener" target="_blank" href="https://github.com/v2rayA/v2rayA/wiki/RoutingA">教程</a></p>
+<h2 id="C的配置">C的配置</h2>
+<p>以火狐浏览器为例</p>
+<p><img src="../images/2021-10-06-21-26-30.png" alt="" /></p>
+<p>192.168.3.105是B的局域网地址</p>
+<h1 id="结尾">结尾</h1>
+<p>设置完成之后，能够正常访问北邮人等网站，兼具fq等功能。</p>
+<h1 id="QA">QA</h1>
+<p>vpn怎么搭建啊？</p>
+<blockquote>
+<p>到网络中心去申请，校园网账号就行</p>
+</blockquote>
+
+      <nav>
+        <div>
+          <a href="https://bbpp222006.github.io/rust环境配置/">&#8249; rust环境配置</a>
+        </div>
+        <div>
+          <a href="https://bbpp222006.github.io/2021-10-6-搭建属于你自己的vpn/"> 搭建属于你自己的vpn &#8250;</a>
+        </div>
+      </nav>
+    <script src="https://utteranc.es/client.js"
+    repo="bbpp222006/bbpp222006.github.io"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+    </script>
+    </article>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav><div><a type="application/atom+xml" href="https://bbpp222006.github.io/atom.xml" target="_blank" title="Glider的博客 Atom/RSS Feed"><i type="Button" class="svg rss" title="Glider的博客 Atom/RSS Feed"></i></a><a class="js m-protected" href="#emluYW5feGlhbmdAaHVzdC5lZHUuY24=" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a><a href="https://github.com/bbpp222006/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <p class="s90"> &copy; <span id="year">2024</span> Glider的博客</p>
+      <nav>
+        <a class="s90" href="https://bbpp222006.github.io/about/"> About </a>
+        <a class="s90" href="https://bbpp222006.github.io/contact/"> Contact </a>
+        <a class="s90" href="https://bbpp222006.github.io/privacy/"> Privacy </a>
+        <a class="s90" href="https://bbpp222006.github.io/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer><span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top"><i class="svgs svgh angu"></i></a>
+</span>
+</body>
+</html>

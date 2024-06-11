@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://bbpp222006.github.io/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://bbpp222006.github.io/abridge.css?h=d34a40bc4242778b5e29" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://bbpp222006.github.io" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://bbpp222006.github.io/manifest.min.json" />
+  <link rel="mask-icon" href="https://bbpp222006.github.io/safari-pinned-tab.svg" color="#ff9900" />
+  <link rel="icon" type="image/svg+xml" href="https://bbpp222006.github.io/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://bbpp222006.github.io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://bbpp222006.github.io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://bbpp222006.github.io/favicon-16x16.png" />
+  <link rel="alternate" type="application/atom+xml" title="Glider的博客 Atom/RSS Feed" href="https://bbpp222006.github.io/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>搭建属于你自己的vpn | Glider的博客</title>
+  <meta name="author" content="Glider" />
+  <meta name="copyright" content="Glider的博客" />
+  <meta name="description" content="I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?" />
+  <link rel="canonical" href="https://bbpp222006.github.io/2021-10-6-搭建属于你自己的vpn/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta name="google-site-verification" content="Your Google Site verification code." />
+  <meta name="msvalidate.01" content="Your Bing Site verification code." />
+  <meta property="og:url" content="https://bbpp222006.github.io/2021-10-6-搭建属于你自己的vpn/" />
+  <meta name="twitter:url" content="https://bbpp222006.github.io/2021-10-6-搭建属于你自己的vpn/" />
+  <meta property="og:description" content="I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?" />
+  <meta name="twitter:description" content="I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?" />
+  <meta property="og:title" content="搭建属于你自己的vpn | Glider的博客" />
+  <meta name="twitter:title" content="搭建属于你自己的vpn | Glider的博客" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://bbpp222006.github.io/banner.png" />
+  <meta property="og:image" content="https://bbpp222006.github.io/banner.png" />
+  <meta property="og:site_name" content="Glider的博客" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2021-10-06" />
+  <meta name="twitter:site" content="@your-user-name" />
+  <meta name="twitter:creator" content="@your-user-name" />
+  <script defer src="https://bbpp222006.github.io/js/abridge.min.js?h=1a12cf684ae4ed40434f" integrity="sha384-ZsreuwU2rKTp7gC4bTf5sYz+3AjMym99XDa/B5wa08fCzLVVX+NDaTsTeyLXseDG"></script>
+  <noscript><link rel="stylesheet" href="https://bbpp222006.github.io/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://bbpp222006.github.io" title="Glider的博客"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#f90" viewBox="0 0 96 96" width="28" height="28"><path stroke-width="14" d="M14 99 46 7h4l32 92"/><path stroke-width="9" d="M-3 82c43-26 59-26 102 0"/><path stroke-linecap="round" stroke-width="1.5" d="M94 72v7m-5-9.8v7m-5-9.8v7.1M79 64v7M63 57.7v7m-5-8.2v7m-5-7.8v7m-5-7.2v7m-5-6.7v7m-5-6.3v7m-5-5.8v7M17 64v7m-5-4.6v7m-5-4.2v7M2 72v7"/></svg>bridge</a></h1></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://bbpp222006.github.io/about/"> About </a></li><li><a class="s110" href="https://bbpp222006.github.io/archive/"> Posts </a></li><li><a class="s110" href="https://bbpp222006.github.io/tags/"> Tags </a></li><li><i type="reset" id="mode" class="js svgs adjust"></i></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="svgs search"></button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://bbpp222006.github.io/2021-10-6-搭建属于你自己的vpn/">搭建属于你自己的vpn</a></h1>
+
+      <span class="s95"> Glider <span class="rpad"></span> 十月 06, 2021 <span class="rpad"></span></span>
+
+    
+
+
+<h1 id="前言">前言</h1>
+<p>随着互联网的发展，网络环境逐渐变得嘈杂和拥堵，里面充斥着各种不正当竞争和灰色利益链。</p>
+<p>因此有必要搭建一个属于自己的网络环境，这个网络环境有几点要求：</p>
+<ul>
+<li>安全性
+<ul>
+<li>没有主人的批准，外人无法进行访问</li>
+<li>网络传输过程中，第三方无法窃取信息</li>
+<li>能够伪装成正常的流量，绕过网络中各种老大哥的监视</li>
+</ul>
+</li>
+<li>方便性
+<ul>
+<li>能够通过ip或者域名直接访问到自己的各种服务</li>
+<li>私人网络中各个节点之间能够相互进行访问，最好是不经过中转的直连</li>
+<li>随时添加新节点</li>
+</ul>
+</li>
+</ul>
+<p>这篇文章主要记录满足以上几种要求的工具，并写一点自己的思考</p>
+<h1 id="正文">正文</h1>
+<h2 id="zerotier">zerotier</h2>
+<p>这个软件其实在国内的各种论坛已经普及了，能够满足上述大多数的要求，但经过长时间的使用，缺点如下：</p>
+<ol>
+<li>运营商qos限速
+<blockquote>
+<p>由于zerotier使用udp进行打洞和传输，因此在拷贝大容量文件时，容易触发运营商的限速</p>
+</blockquote>
+</li>
+<li>打洞效率一般
+<blockquote>
+<p>ab如果均处于最深的nat类型，打洞的时间可能会持续很久，并且一旦ab的ip发生变化，就需要重新打洞，延迟不稳定</p>
+</blockquote>
+</li>
+</ol>
+<p>优点：</p>
+<ol>
+<li>能够自建moon，planet等握手节点，不过需要公网ip</li>
+</ol>
+<h2 id="tailscale">tailscale</h2>
+<p>这个软件的客户端是开源的，但服务端（中心节点）闭源，有人基于客户端的api写了一个中心节点，叫做headscale</p>
+<p>headscale类似于zerotier的自建moon，planet，博主还没搭建过，不清楚和原版的有什么差别</p>
+<p>tailscale基于wireguard，因此理论上速度非常快，而且打洞的成功率也非常高（网上说的）</p>
+<p>若不使用headscale，用官方网站进行部署非常简单，不过这就需要你信任第三方了（目前支持谷歌、微软、github）</p>
+<p>这是hackernews上的讨论：<a rel="noopener" target="_blank" href="https://news.ycombinator.com/item?id=28572013">Headscale: Open-source implementation of the Tailscale control server</a></p>
+<p>目前这个软件比较新，国内也没什么讨论（布道者）。也许等大伙儿都知道了老大哥们就会开始封锁中心节点吧……</p>
+<h2 id="nebula">nebula</h2>
+<p>借鉴tinc，用golang实现的vpn软件</p>
+<p>这篇文章讨论了nebula和tailscale的优缺点 <a rel="noopener" target="_blank" href="https://tailscale.com/kb/1148/tailscale-vs-nebula/">点我直达</a></p>
+<p>结论如下：（工地英语，将就着看）</p>
+<blockquote>
+<p>如果你是想搞事情的运维或者极客，想要一个免费、开源、p2p、全连接，并且自己能进行中心控制的vpn软件，就用nebula吧！</p>
+</blockquote>
+<blockquote>
+<p>如果你想要一个优雅、简单、第三方网站托管的vpn软件，试试Tailscale</p>
+</blockquote>
+<p>nebula还没试过，不清楚打洞效率如何。</p>
+<p>缺点就是：你必须要有一个有公网ip的服务器，作为中心控制节点</p>
+<h2 id="其它软件">其它软件</h2>
+<p>这个github项目里，老哥收集了很多类似的软件：https://github.com/cedrickchee/awesome-wireguard</p>
+<p>不知道以后会不会更新，反正现在看来还挺新</p>
+
+      <nav>
+        <div>
+          <a href="https://bbpp222006.github.io/2021-10-6-分流代理配置/">&#8249; 分流代理配置</a>
+        </div>
+        <div>
+          <a href="https://bbpp222006.github.io/pt盒子配置记录/"> pt盒子配置记录 &#8250;</a>
+        </div>
+      </nav>
+    <script src="https://utteranc.es/client.js"
+    repo="bbpp222006/bbpp222006.github.io"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+    </script>
+    </article>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav><div><a type="application/atom+xml" href="https://bbpp222006.github.io/atom.xml" target="_blank" title="Glider的博客 Atom/RSS Feed"><i type="Button" class="svg rss" title="Glider的博客 Atom/RSS Feed"></i></a><a class="js m-protected" href="#emluYW5feGlhbmdAaHVzdC5lZHUuY24=" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a><a href="https://github.com/bbpp222006/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <p class="s90"> &copy; <span id="year">2024</span> Glider的博客</p>
+      <nav>
+        <a class="s90" href="https://bbpp222006.github.io/about/"> About </a>
+        <a class="s90" href="https://bbpp222006.github.io/contact/"> Contact </a>
+        <a class="s90" href="https://bbpp222006.github.io/privacy/"> Privacy </a>
+        <a class="s90" href="https://bbpp222006.github.io/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer><span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top"><i class="svgs svgh angu"></i></a>
+</span>
+</body>
+</html>

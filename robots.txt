@@ -1,0 +1,5 @@
+
+Sitemap: https://bbpp222006.github.io/sitemap.xml
+User-Agent: *
+Allow: /
+Host: https://bbpp222006.github.io

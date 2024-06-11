@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://bbpp222006.github.io/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://bbpp222006.github.io/abridge.css?h=d34a40bc4242778b5e29" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://bbpp222006.github.io" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://bbpp222006.github.io/manifest.min.json" />
+  <link rel="mask-icon" href="https://bbpp222006.github.io/safari-pinned-tab.svg" color="#ff9900" />
+  <link rel="icon" type="image/svg+xml" href="https://bbpp222006.github.io/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://bbpp222006.github.io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://bbpp222006.github.io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://bbpp222006.github.io/favicon-16x16.png" />
+  <link rel="alternate" type="application/atom+xml" title="Glider的博客 Atom/RSS Feed" href="https://bbpp222006.github.io/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>python科学计算环境搭配踩坑记 | Glider的博客</title>
+  <meta name="author" content="Glider" />
+  <meta name="copyright" content="Glider的博客" />
+  <meta name="description" content="I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?" />
+  <link rel="canonical" href="https://bbpp222006.github.io/python科学计算环境搭配踩坑记/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta name="google-site-verification" content="Your Google Site verification code." />
+  <meta name="msvalidate.01" content="Your Bing Site verification code." />
+  <meta property="og:url" content="https://bbpp222006.github.io/python科学计算环境搭配踩坑记/" />
+  <meta name="twitter:url" content="https://bbpp222006.github.io/python科学计算环境搭配踩坑记/" />
+  <meta property="og:description" content="I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?" />
+  <meta name="twitter:description" content="I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?" />
+  <meta property="og:title" content="python科学计算环境搭配踩坑记 | Glider的博客" />
+  <meta name="twitter:title" content="python科学计算环境搭配踩坑记 | Glider的博客" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://bbpp222006.github.io/banner.png" />
+  <meta property="og:image" content="https://bbpp222006.github.io/banner.png" />
+  <meta property="og:site_name" content="Glider的博客" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2019-12-28" />
+  <meta name="twitter:site" content="@your-user-name" />
+  <meta name="twitter:creator" content="@your-user-name" />
+  <script defer src="https://bbpp222006.github.io/js/abridge.min.js?h=1a12cf684ae4ed40434f" integrity="sha384-ZsreuwU2rKTp7gC4bTf5sYz+3AjMym99XDa/B5wa08fCzLVVX+NDaTsTeyLXseDG"></script>
+  <noscript><link rel="stylesheet" href="https://bbpp222006.github.io/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://bbpp222006.github.io" title="Glider的博客"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#f90" viewBox="0 0 96 96" width="28" height="28"><path stroke-width="14" d="M14 99 46 7h4l32 92"/><path stroke-width="9" d="M-3 82c43-26 59-26 102 0"/><path stroke-linecap="round" stroke-width="1.5" d="M94 72v7m-5-9.8v7m-5-9.8v7.1M79 64v7M63 57.7v7m-5-8.2v7m-5-7.8v7m-5-7.2v7m-5-6.7v7m-5-6.3v7m-5-5.8v7M17 64v7m-5-4.6v7m-5-4.2v7M2 72v7"/></svg>bridge</a></h1></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://bbpp222006.github.io/about/"> About </a></li><li><a class="s110" href="https://bbpp222006.github.io/archive/"> Posts </a></li><li><a class="s110" href="https://bbpp222006.github.io/tags/"> Tags </a></li><li><i type="reset" id="mode" class="js svgs adjust"></i></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="svgs search"></button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://bbpp222006.github.io/python科学计算环境搭配踩坑记/">python科学计算环境搭配踩坑记</a></h1>
+
+      <span class="s95"> Glider <span class="rpad"></span> 十二月 28, 2019 <span class="rpad"></span></span>
+
+    
+
+
+<h1 id="前言">前言</h1>
+<p><del>可能，马上，应该要招新了，组长要我写个教程，我也正好记录一下关于这块的环境配置。</del></p>
+<p>如果你是一名研究人员，或是一名对新兴事物感兴趣的极客，相信这套环境可以对你的工作提升极大的研究效率。</p>
+<p>环境主要围绕 python，深度学习，大数据，爬虫等方面展开。即需要对数据进行直观的操作，显示，依赖于各种软件包（脚本小子），频繁的切换窗口比对数据等。</p>
+<p>希望这篇博客能帮助你少走一些弯路，如果有更好的想法，欢迎在下面留言。</p>
+<h1 id="正文">正文</h1>
+<h2 id="环境安装">环境安装</h2>
+<p>注意！<strong>首先将电脑系统内的 python 卸载，就是直接从<a rel="noopener" target="_blank" href="https://www.python.org/">python 官网</a>下载的那个。</strong></p>
+<p>原因：后续所有关于包管理的操作将在 anaconda 的虚拟环境中进行，而在导入 pycharm 虚拟环境时可能会与系统环境内部的 python 解释器相冲突。 所以希望各位在装环境前能有一个相对干净的 python 环境。</p>
+<h3 id="anaconda_安装">anaconda 安装</h3>
+<ol>
+<li>首先官网安装<a rel="noopener" target="_blank" href="https://www.anaconda.com/">anaconda</a></li>
+</ol>
+<p><img src="../images/mk-2019-12-28-14-19-23.png" alt="" />这个选项要勾上，保证以后系统默认的 python 是 anaconda 内部的，方便以后管理。另一选项不用勾，英语好的可以自行分析。</p>
+<h3 id="pycharm_安装">pycharm 安装</h3>
+<ol>
+<li><a rel="noopener" target="_blank" href="https://www.jetbrains.com/pycharm/">官网</a>安装（有华科邮箱的可以免费使用专业版本，没有的可以下载社区版本，感觉现阶段没什么区别……）</li>
+<li>下载专业版本的同志可以在官网去注册，记得用学校邮箱，注册完后后会发个激活码到你的邮箱，打开专业版用这个码激活就行。也可以软件直接登录注册的账号，自动激活。</li>
+<li>没邮箱却想用专业版的同志可以：1，去主校区的网络中心怼人，叫管校园网的那帮伙计把你邮箱激活。2，网上找个方法破解。</li>
+</ol>
+<h2 id="环境配置">环境配置</h2>
+<p>请各位老哥跟着以下的步骤依次进行</p>
+<p>以安装 pytorch 为例,我们将新建一个名为 torch 的 conda 虚拟环境并将环境导入 pycharm,jupyter lab</p>
+<h3 id="换源">换源</h3>
+<p>墙最近又变高了，没有国内镜像基本啥都下不动，感谢国内的各所高校做出的贡献。<del>华科有 kali 的镜像，没想到吧！</del></p>
+<h4 id="conda_换源">conda 换源</h4>
+<p><a rel="noopener" target="_blank" href="https://mirror.tuna.tsinghua.edu.cn/help/anaconda/">清华官方教程</a></p>
+<p><code>注意，网上csdn之类的教程没有更新，请根据最新的官方方法进行修改</code></p>
+<h4 id="pip_换源">pip 换源</h4>
+<p>因为以后装包主要使用 conda,pip 尽量别使用(<a href="https://bbpp222006.github.io/python%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E7%8E%AF%E5%A2%83%E6%90%AD%E9%85%8D%E8%B8%A9%E5%9D%91%E8%AE%B0/#conda%E5%92%8Cpip%E7%9A%84%E5%8C%BA%E5%88%AB">conda和pip的区别</a>)<br />
+conda 无法完成安装时才使用 pip,因此就在这里介绍临时方法</p>
+<pre class="z-code"><code><span class="z-text z-plain">pip 后加参数 -i https://pypi.tuna.tsinghua.edu.cn/simple
+</span><span class="z-text z-plain">例1：pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pandas
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">例2：我想安装tensorflow-gpu1.4.1,执行：
+</span><span class="z-text z-plain">pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorflow-gpu==1.4.1
+</span></code></pre>
+<h3 id="anaconda_配置">anaconda 配置</h3>
+<p>打开 anaconda prompt</p>
+<pre class="z-code"><code><span class="z-text z-plain"># 先在base环境安装jupyter lab的相关包
+</span><span class="z-text z-plain">conda install jupyterlab
+</span><span class="z-text z-plain">conda install nb_conda
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain"># 新建一个名为torch的py3.7虚拟环境
+</span><span class="z-text z-plain">conda create -n torch python=3.7
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain"># 进入torch环境
+</span><span class="z-text z-plain">activate torch
+</span></code></pre>
+<p>开始安装各种包 ,pytorch 的安装在官网有命令<a rel="noopener" target="_blank" href="https://pytorch.org/get-started/locally/">链接</a></p>
+<p>ps:有老黄家显卡的可以选择包含 cuda 的版本,pytorch 安装与 tensorflow 不同,不需要专门下载 cuda,只需要显卡驱动更新就行</p>
+<p><del>从官网复制命令时记得将最后的 -c pytorch 去掉,才能享受清华源的高速</del><br />
+-c pytorch 现在不要删，
+各位同志可以查一下 conda -c 这个命令的作用<br />
+<a rel="noopener" target="_blank" href="https://www.jianshu.com/p/7ebe1df808ba">conda命令的一些常用用法</a></p>
+<pre class="z-code"><code><span class="z-text z-plain"># 安装pytorch(写博客时的官网命令,装的是含cuda的版本,各位最好去官网使用最新的命令)
+</span><span class="z-text z-plain">conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain"># 安装各类必要包,只是举例,可以按需下载
+</span><span class="z-text z-plain">conda install matplotlib
+</span><span class="z-text z-plain">conda install scikit-learn
+</span><span class="z-text z-plain">conda install scipy
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain"># 安装虚拟环境下的jupyter依赖包
+</span><span class="z-text z-plain">conda install ipykernel
+</span></code></pre>
+<h3 id="pycharm配置">pycharm配置</h3>
+<p>打开软件后找个你喜欢的地方新建一个project<br />
+解释器选择已存在的anaconda虚拟环境<br />
+<img src="../images/mk-2019-12-28-20-08-37.png" alt="" />
+<img src="../images/mk-2019-12-28-20-09-20.png" alt="" />
+<img src="../images/mk-2019-12-28-20-10-03.png" alt="" /><br />
+最后一个步骤选择安装anaconda所在位置的文件夹,内部的env文件夹内找到刚创建的torch环境</p>
+<h3 id="jupyter_lab配置">jupyter lab配置</h3>
+<p><strong>此为选择项, 因为jupyter lab的社区并不完善,可能在配置过程中出现各种玄学问题,所以初学者可以不用jupyter lab</strong>
+anaconda prompt 中输入</p>
+<pre class="z-code"><code><span class="z-text z-plain">jupyter lab --generate-config
+</span><span class="z-text z-plain"># 输入命令后会在下方显示config文件的路径
+</span></code></pre>
+<p>打开jupyter_notebook_config.py文件编辑,添加以下语句</p>
+<pre class="z-code"><code><span class="z-text z-plain">c.NotebookApp.notebook_dir = &#39;C:\jupyter&#39;
+</span><span class="z-text z-plain"># 用一个自己喜欢的文件夹就好,代表jupyter打开后默认所在的目录
+</span></code></pre>
+<p>懒得重复造轮子了,贴个博客,各位看着办……<br />
+<a rel="noopener" target="_blank" href="https://www.cnblogs.com/lskreno/p/10844315.html">插件配置</a></p>
+<h2 id="补充知识">补充知识</h2>
+<h3 id="conda和pip的区别">conda和pip的区别</h3>
+<p>Conda和pip通常被认为几乎完全相同。虽然这两个工具的某些功能重叠，但它们设计用于不同的目的。 Pip是Python Packaging Authority推荐的用于从Python Package Index安装包的工具。 Pip安装打包为wheels或源代码分发的Python软件。后者可能要求系统安装兼容的编译器和库。</p>
+<p>Conda是跨平台的包和环境管理器，可以安装和管理来自Anaconda repository以 Anaconda Cloud的conda包。 Conda包是二进制文件，徐需要使用编译器来安装它们。另外，conda包不仅限于Python软件。它们还可能包含C或C ++库，R包或任何其他软件。</p>
+<p>这是conda和pip之间的关键区别。 Pip安装Python包，而conda安装包可能包含用任何语言编写的软件的包。在使用pip之前，必须通过系统包管理器或下载并运行安装程序来安装Python解释器。而Conda可以直接安装Python包以及Python解释器。</p>
+<p>另一个区别是conda能够创建可以包含不同版本的Python或其他软件包的隔离环境。在使用数据科学工具时，这非常有用，因为不同的工具可能包含冲突的要求，这些要求可能会阻止它们全部安装到单个环境中。 Pip没有内置的环境支持，而是依赖于virtualenv或venv 等其他工具来创建隔离环境。 pipenv，poetry和hatch wrap pip和virtualenv等工具提供了统一的方法来处理这些环境。</p>
+<p>Pip和conda在如何实现环境中的依赖关系方面也有所不同。安装包时，pip会在递归的串行循环中安装依赖项。没有努力确保同时满足所有包的依赖性。如果较早安装的软件包与稍后安装的软件包具有不兼容的依赖性版本，则可能导致破坏的环境。conda使用可确保满足环境中安装的所有包的所有要求。此检查可能需要额外的时间，但有助于防止创建破坏的环境，前期关于依赖关系包的元数据是正确的。</p>
+<p>考虑到conda和pip之间的相似性，有些人试图将这些工具结合起来创建数据科学环境也就不足为奇了。将pip与conda结合的主要原因是有些包只能通过pip安装。 Anaconda创酷提供超过1,500个软件包，包括最流行的数据科学，机器学习和AI框架。这些，以及包括conda-forge和bioconda在内的数据通过Anaconda云提供的数千个附加软件包，可以使用conda进行安装。尽管有大量的软件包，但与PyPI上提供的150,000多个软件包相比，它仍然很小。有时候需要的包没有conda包，但在PyPI上有，可以用pip安装。</p>
+
+      <nav>
+        <div>
+          <a href="https://bbpp222006.github.io/2020-2-9-论文翻译《使用条件深度卷积生成对抗网络设计纳米光子结构》/">&#8249; 使用条件深度卷积生成对抗网络设计纳米光子结构 论文翻译</a>
+        </div>
+        <div>
+          <a href="https://bbpp222006.github.io/factorio服务器搭建记录/"> factorio服务器搭建 &#8250;</a>
+        </div>
+      </nav>
+    <script src="https://utteranc.es/client.js"
+    repo="bbpp222006/bbpp222006.github.io"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+    </script>
+    </article>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav><div><a type="application/atom+xml" href="https://bbpp222006.github.io/atom.xml" target="_blank" title="Glider的博客 Atom/RSS Feed"><i type="Button" class="svg rss" title="Glider的博客 Atom/RSS Feed"></i></a><a class="js m-protected" href="#emluYW5feGlhbmdAaHVzdC5lZHUuY24=" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a><a href="https://github.com/bbpp222006/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <p class="s90"> &copy; <span id="year">2024</span> Glider的博客</p>
+      <nav>
+        <a class="s90" href="https://bbpp222006.github.io/about/"> About </a>
+        <a class="s90" href="https://bbpp222006.github.io/contact/"> Contact </a>
+        <a class="s90" href="https://bbpp222006.github.io/privacy/"> Privacy </a>
+        <a class="s90" href="https://bbpp222006.github.io/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer><span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top"><i class="svgs svgh angu"></i></a>
+</span>
+</body>
+</html>

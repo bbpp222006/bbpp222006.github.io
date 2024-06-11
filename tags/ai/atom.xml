@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Glider的博客 - AI</title>
+    <subtitle>I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://bbpp222006.github.io/tags/ai/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://bbpp222006.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-04-29T00:00:00+00:00</updated>
+    <id>https://bbpp222006.github.io/tags/ai/atom.xml</id>
+    <entry xml:lang="en">
+        <title>对“智能”的再次思考</title>
+        <published>2024-04-29T00:00:00+00:00</published>
+        <updated>2024-04-29T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bbpp222006.github.io/对“智能”的再次思考/"/>
+        <id>https://bbpp222006.github.io/对“智能”的再次思考/</id>
+        
+        <content type="html" xml:base="https://bbpp222006.github.io/对“智能”的再次思考/">&lt;p&gt;“人们往往都在犯前提性错误”&lt;&#x2F;p&gt;
+&lt;p&gt;“人类最大的弱点就是无法想象自己没有见过的事物”&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;正文&quot;&gt;正文&lt;&#x2F;h1&gt;
+&lt;p&gt;这篇也是受前不久hackernews上的一篇帖子的启发，那篇帖子主题也是本blog的主题&lt;&#x2F;p&gt;
+&lt;p&gt;前几个世纪中，我们对智能&#x2F;agi的定义发生过很多次变化&lt;&#x2F;p&gt;
+&lt;p&gt;但无外乎都牵扯到或着重于讨论“逻辑”、“熵”等可解释的内容&lt;&#x2F;p&gt;
+&lt;p&gt;例如专家系统、符号推理&lt;&#x2F;p&gt;
+&lt;p&gt;甚至包括图灵测试等用于测试agi的实验，也都是评价agent的语言、动作的逻辑能力&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;最近LLM的出现给agi带来了曙光&lt;&#x2F;p&gt;
+&lt;p&gt;LLM的中心思想是“压缩即智能”(以openai的Ilya为代表的压缩智能派)&lt;&#x2F;p&gt;
+&lt;p&gt;LLM技术的想法也和特点也特别简单，通过海量的语料，对语言中的模式进行建模，然后预测下一个字&#x2F;token出现的概率&lt;&#x2F;p&gt;
+&lt;p&gt;这种想法太过于简单，以至于不需要神经网络，仅用gzip+knn这些经典算法也能达成不错的效果&lt;&#x2F;p&gt;
+&lt;p&gt;所以在llm刚出现的时候，许多其他派别的ai大佬（LeCun等）嘲讽这种模式为“随机鹦鹉”&lt;&#x2F;p&gt;
+&lt;p&gt;毕竟这种思考方式一点也不“精致”&#x2F;“COOL”，怎么看也不跟“智能”能搭上边&lt;&#x2F;p&gt;
+&lt;p&gt;感谢资本主义，就算广受质疑openai的也能融到傻子投资人的钱继续梭哈堆算力&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;质变来源于chatgpt3.5的发布，openai在报告中指出，llm在吃了大量语料后拥有了指令遵循的能力，而这甚至不需要进一步的微调。&lt;&#x2F;p&gt;
+&lt;p&gt;例如当你输入：&lt;&#x2F;p&gt;
+&lt;p&gt;&amp;quot;&amp;quot;&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;English: Who are you?&lt;&#x2F;p&gt;
+&lt;p&gt;中文：你是谁？&lt;&#x2F;p&gt;
+&lt;p&gt;Englishi: What time is it?&lt;&#x2F;p&gt;
+&lt;p&gt;中文：&lt;&#x2F;p&gt;
+&lt;p&gt;&amp;quot;&amp;quot;&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;llm就能后续接着“随机补全”出“现在几点钟”这类翻译后的话。&lt;&#x2F;p&gt;
+&lt;p&gt;随机鹦鹉真是个很贴切的比喻，鹦鹉也是听了很多语料之后才能学会“说话”&lt;&#x2F;p&gt;
+&lt;p&gt;但没人会认为鹦鹉真的理解 ： 它发出的声音在符号界所承担的抽象含义。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;可是&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;它真的一点也不*”理解“*么？&lt;&#x2F;p&gt;
+&lt;p&gt;或者说，我们是如何定义*”理解“*的&lt;&#x2F;p&gt;
+&lt;p&gt;我们理所当然的认为一只鹦鹉不可能真正的*”理解“&lt;em&gt;，这是因为我们对&lt;&#x2F;em&gt;”理解“*的前提定义就错了，还是因为身为”人类“的&lt;strong&gt;傲慢&lt;&#x2F;strong&gt;？&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;一则寓言故事（会解梦的蛇）&quot;&gt;一则寓言故事（会解梦的蛇）&lt;&#x2F;h2&gt;
+&lt;p&gt;一天，国王做了一个奇怪的梦，梦到有一只红狐狸倒挂在自己金权杖的上方。&lt;&#x2F;p&gt;
+&lt;p&gt;国王醒来后，召来了自己的智囊团，问这个梦到底是什么意思。但他们不是摇头就是耸肩，没有人知道答案。无奈，国王只好命令王国里所有成年的男性和女性都必须到宫殿里来。他坚信，肯定有人可以解开这个梦。&lt;&#x2F;p&gt;
+&lt;p&gt;人们开始从四面八方赶来，其中包括一位农夫。他在穿越山谷的路上，遇到了一条盘踞在山路上的蛇。当他走近这条蛇的时候，蛇突然开口说话了：“嘿，过路人，你要去为国王解梦吗？”&lt;&#x2F;p&gt;
+&lt;p&gt;农夫感到非常吃惊，回答道：“是呀，不过我只是一个普通的庄稼人，哪里懂得什么梦呢？”&lt;&#x2F;p&gt;
+&lt;p&gt;“是这样啊！不过我倒是可以告诉你这个梦的意思，你可以讲给国王听，并能得到奖赏。”&lt;&#x2F;p&gt;
+&lt;p&gt;“那快告诉我吧，好心的蛇，快告诉我！”&lt;&#x2F;p&gt;
+&lt;p&gt;“但你要知道，没有天上掉下来的馅饼，我可以告诉你，不过你要把得到的奖赏分我一半。”&lt;&#x2F;p&gt;
+&lt;p&gt;农夫毫不犹豫地同意了，他蹲下身子听蛇说话，还不时地点点头。&lt;&#x2F;p&gt;
+&lt;p&gt;几天后，他终于赶到了国王的宫殿前，说能解国王的梦。他很快被带到了国王的面前。农夫施了一个礼，毕恭毕敬地说：“陛下，您的梦是这个意思：如今是一个充满了狡诈和背叛的年代，没有人值得信任，您的王国就像是一个狐狸窝。”&lt;&#x2F;p&gt;
+&lt;p&gt;国王点了点头，若有所思。“嗯，说得很好。”国王取出了两袋金子，送给了农夫。&lt;&#x2F;p&gt;
+&lt;p&gt;农夫得到金子后开始起身往回赶，但是他小心地避开了来时路过的山谷，绕了很远的路才回到了家。就这样，两袋金子全归了他自己。&lt;&#x2F;p&gt;
+&lt;p&gt;一天晚上，国王又做了一个奇怪的梦，梦到在自己权杖上方的天花板上悬着一柄长剑。醒来后，国王唤来了自己的侍卫：“去，把那个来自北部山区的农夫找来。”&lt;&#x2F;p&gt;
+&lt;p&gt;农夫得到国王的命令后心里一沉，但他明白，如今只有一个办法可行，于是他奔向了曾经走过的那个山谷。&lt;&#x2F;p&gt;
+&lt;p&gt;“好心的蛇，好心的蛇。”他拼命喊道。山谷里空荡荡的，根本没有回声。&lt;&#x2F;p&gt;
+&lt;p&gt;“好心的蛇，我还需要你的帮助，求求你了。”&lt;&#x2F;p&gt;
+&lt;p&gt;“过路人，我在这里。”蛇终于出现了。&lt;&#x2F;p&gt;
+&lt;p&gt;“我知道你为什么而来，我可以告诉你这个梦的意思，但这次你一定要发誓把一半的奖赏分给我。”&lt;&#x2F;p&gt;
+&lt;p&gt;“好心的蛇，我发誓，这次我决不食言。”&lt;&#x2F;p&gt;
+&lt;p&gt;蛇又向农夫耳语了一番。农夫继续赶路，几天后他来到了国王的面前。&lt;&#x2F;p&gt;
+&lt;p&gt;“陛下，您的梦的意思是：如今是一个充满了愤怒和战争的年代，您的敌人正在预谋发动战争，整个王国都将刀光剑影，血雨腥风。”农夫一字不漏地将蛇的话说给了国王听。&lt;&#x2F;p&gt;
+&lt;p&gt;“很好，我知道了。”国王点了点头，面色凝重。他送给了农夫四袋金子，然后开始为迎接即将到来的战争而准备了。&lt;&#x2F;p&gt;
+&lt;p&gt;这一次，农夫原路返回，他来到了山谷，看到了盘踞在山路上的蛇，暗暗拔出了匕首。&lt;&#x2F;p&gt;
+&lt;p&gt;“哈，过路人，你一定是带来了我的那份奖赏。”蛇欣喜地说道。&lt;&#x2F;p&gt;
+&lt;p&gt;“哼，你什么也不会得到，因为今天是你的末日。”农夫面目狰狞。&lt;&#x2F;p&gt;
+&lt;p&gt;蛇夺路而逃，但农夫却在后面穷追不舍，最后砍掉了蛇的一段尾巴。那些金子又都归了他自己。&lt;&#x2F;p&gt;
+&lt;p&gt;时光飞逝。一天晚上，国王又做了一个梦，梦到自己权杖上方的天花板上悬着一只屠宰后的羊。醒来后，他又派侍卫去寻找那个会解梦的农夫。农夫知道自己别无他路了，于是他收起了所有的自尊和骄傲，再一次向那山谷走去。&lt;&#x2F;p&gt;
+&lt;p&gt;“好心的蛇，好心的蛇。”他一声声地喊着。&lt;&#x2F;p&gt;
+&lt;p&gt;山谷里静悄悄的，还是没有任何回声。&lt;&#x2F;p&gt;
+&lt;p&gt;“好心的蛇，我还有事相求。”&lt;&#x2F;p&gt;
+&lt;p&gt;“过路人，我在这里。”蛇终于出现了。&lt;&#x2F;p&gt;
+&lt;p&gt;“好心的蛇，您一定要宽恕我，国王又做了一个梦。”农夫恳求道。&lt;&#x2F;p&gt;
+&lt;p&gt;“我知道，我可以告诉你这个梦的意思，不过你这次必须发誓要和我一起分享奖赏。”&lt;&#x2F;p&gt;
+&lt;p&gt;“我发誓，一半的奖赏都会归你。”&lt;&#x2F;p&gt;
+&lt;p&gt;“国王梦到了一只肥羊在自己权杖的上方，这个梦的意思是……”听完蛇的话，农夫重新上路了。&lt;&#x2F;p&gt;
+&lt;p&gt;几天后，他又一次站在国王的面前。“陛下，您的梦的意思是：如今已经是一个充满了安逸和慷慨的年代，您的臣民都安居乐业，享受太平的生活。一只肥羊预示着太平盛世的到来。”&lt;&#x2F;p&gt;
+&lt;p&gt;国王点了点头，开心地笑了：“很好，你解得不错。”他给了农夫六袋金子。农夫得到金子后，毫不犹豫地向山谷走去。
+“好心的蛇，好心的蛇。”他高兴地喊道。&lt;&#x2F;p&gt;
+&lt;p&gt;当蛇出现时，农夫双膝跪地，眼里含着泪水：“好心的蛇，你一定要收下这六袋金子，我心里非常愧疚，真后悔当初那样对待您。”&lt;&#x2F;p&gt;
+&lt;p&gt;蛇抬起了瘦长的头，左右摇摆了一下，说：“过路人，这不是你的错，***你不过是这个王国中的一员。当整个王国像一个狐狸窝的时候，你也变得狡猾起来，；当整个王国血雨腥风的时候，你也无法抑制内心的愤怒和狂躁，挥刀砍了我的尾巴；而现在整个王国一片祥和，你也学会了感恩和仁慈，送给我所有的金子。***但是，你不明白，对于一条像我这样置身世外的蛇来说，金子毫无用处。你拿去，好好过日子吧！”&lt;&#x2F;p&gt;
+&lt;p&gt;说完，蛇就钻进了石缝里，转眼间消失得无影无踪。&lt;&#x2F;p&gt;
+&lt;p&gt;农夫只得把装金子的袋子搭在了肩上，继续赶路，但这时，他突然感到肩上的金袋重了许多。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;总结&quot;&gt;总结&lt;&#x2F;h2&gt;
+&lt;p&gt;现在来看，”智能“的内核可能非常简洁，我想称之为”演员“，又或者是”模仿者“&lt;&#x2F;p&gt;
+&lt;p&gt;测试的大概流程也非常简单，给它一个全新的环境，把它丢里面，看它能否做出符合环境”变化“的动作&#x2F;行为。&lt;&#x2F;p&gt;
+&lt;p&gt;以llm为例&lt;&#x2F;p&gt;
+&lt;p&gt;给它一个喜剧上下文，它会感到”开心“&lt;&#x2F;p&gt;
+&lt;p&gt;给它一个悲剧上下文，它会感到”难过“&lt;&#x2F;p&gt;
+&lt;p&gt;智能也许是这样定义的：&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;给它一个舞台，它能随着旋律和灯光起舞&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;我们人类引以为傲的逻辑、符号、道德等概念，只不过是&lt;em&gt;算力&lt;&#x2F;em&gt;达到一定程度，&lt;em&gt;涌现&lt;&#x2F;em&gt;出来的特征罢了。&lt;&#x2F;p&gt;
+&lt;p&gt;甚至可能都谈不上&lt;em&gt;涌现&lt;&#x2F;em&gt;，也许等强agi出现后，我们才会天真的发现，从更高的维度上来看，这些概念都只是浪花一朵。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;“&lt;em&gt;我们&lt;&#x2F;em&gt;的所有知识，无论是过去的、现在的，还是未来的，都&lt;em&gt;远远比不上我们&lt;&#x2F;em&gt;永远无法知道的。”——康斯坦丁·齐奥尔科夫斯基&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>纳指到顶了吗</title>
+        <published>2024-04-23T00:00:00+00:00</published>
+        <updated>2024-04-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bbpp222006.github.io/纳指到顶了吗/"/>
+        <id>https://bbpp222006.github.io/纳指到顶了吗/</id>
+        
+        <content type="html" xml:base="https://bbpp222006.github.io/纳指到顶了吗/">&lt;h1 id=&quot;正文&quot;&gt;正文&lt;&#x2F;h1&gt;
+&lt;p&gt;这段时间美股跌的很凶，原因是美联储的预期从降息变成了加息，更深层次的原因有说CPI的，有说失业率的。&lt;&#x2F;p&gt;
+&lt;p&gt;叠加最近的中东局势，黄金石油等大宗商品暴涨，很多人觉得纳指差不多到顶了。&lt;&#x2F;p&gt;
+&lt;p&gt;但个人感觉还没到顶。&lt;&#x2F;p&gt;
+&lt;p&gt;ai革命的浪潮并没有消退，与黄金、石油、战争相比，这次的ai浪潮在整个人类文明上是从未出现过的。&lt;&#x2F;p&gt;
+&lt;p&gt;没人知道ai会带来什么，它的影响会比前几个更大还是更小。&lt;&#x2F;p&gt;
+&lt;p&gt;这几天，meta的llama3突然开源，直接把之前的所有开源模型艹翻了。&lt;&#x2F;p&gt;
+&lt;p&gt;之前的agent、rag搭配开源模型都是玩具，只有配上gpt4才能有些作用，但是费用太高没什么人用。&lt;&#x2F;p&gt;
+&lt;p&gt;这次llama3出来，好事者的测试效果直逼gpt4，并且各种开源框架还在加速适配。&lt;&#x2F;p&gt;
+&lt;p&gt;meta甚至还有个400B版本的还没放出来，到时候估计又是一波ai升浪。&lt;&#x2F;p&gt;
+&lt;p&gt;再者就是今年gpt5可能会放出来，openai可能又有新活。&lt;&#x2F;p&gt;
+&lt;p&gt;综上，个人还是坚持定投纳指etf，重仓world coin&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;小资金的投资策略&quot;&gt;小资金的投资策略&lt;&#x2F;h1&gt;
+&lt;p&gt;如果有几百万，可能就会更加分散投资，吃点beta算了。&lt;&#x2F;p&gt;
+&lt;p&gt;但是个人的工作差不多是&amp;quot;董志民们&amp;quot;的级别，无法脱身、单打独斗的情况下只能自己的工作和工资对冲了……&lt;&#x2F;p&gt;
+&lt;p&gt;盐老师说的好，你都黄袍加身了，还唯唯诺诺的小心谨慎，1000块累死累活的才变成1100，有什么意义。&lt;&#x2F;p&gt;
+&lt;p&gt;干脆一把梭，输了下个月工资再梭。&lt;&#x2F;p&gt;
+&lt;p&gt;有了原始资本积累才有资格接着玩下去。&lt;&#x2F;p&gt;
+&lt;p&gt;看有kol说5月份才是大牛市，现在赶紧攒一波子弹，争取在牛潮中活得更久。&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

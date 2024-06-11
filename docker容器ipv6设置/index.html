@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://bbpp222006.github.io/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://bbpp222006.github.io/abridge.css?h=d34a40bc4242778b5e29" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://bbpp222006.github.io" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://bbpp222006.github.io/manifest.min.json" />
+  <link rel="mask-icon" href="https://bbpp222006.github.io/safari-pinned-tab.svg" color="#ff9900" />
+  <link rel="icon" type="image/svg+xml" href="https://bbpp222006.github.io/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://bbpp222006.github.io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://bbpp222006.github.io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://bbpp222006.github.io/favicon-16x16.png" />
+  <link rel="alternate" type="application/atom+xml" title="Glider的博客 Atom/RSS Feed" href="https://bbpp222006.github.io/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>docker容器ipv6设置 | Glider的博客</title>
+  <meta name="author" content="Glider" />
+  <meta name="copyright" content="Glider的博客" />
+  <meta name="description" content="I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?" />
+  <link rel="canonical" href="https://bbpp222006.github.io/docker容器ipv6设置/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta name="google-site-verification" content="Your Google Site verification code." />
+  <meta name="msvalidate.01" content="Your Bing Site verification code." />
+  <meta property="og:url" content="https://bbpp222006.github.io/docker容器ipv6设置/" />
+  <meta name="twitter:url" content="https://bbpp222006.github.io/docker容器ipv6设置/" />
+  <meta property="og:description" content="I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?" />
+  <meta name="twitter:description" content="I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?" />
+  <meta property="og:title" content="docker容器ipv6设置 | Glider的博客" />
+  <meta name="twitter:title" content="docker容器ipv6设置 | Glider的博客" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://bbpp222006.github.io/banner.png" />
+  <meta property="og:image" content="https://bbpp222006.github.io/banner.png" />
+  <meta property="og:site_name" content="Glider的博客" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2022-03-26" />
+  <meta name="twitter:site" content="@your-user-name" />
+  <meta name="twitter:creator" content="@your-user-name" />
+  <script defer src="https://bbpp222006.github.io/js/abridge.min.js?h=1a12cf684ae4ed40434f" integrity="sha384-ZsreuwU2rKTp7gC4bTf5sYz+3AjMym99XDa/B5wa08fCzLVVX+NDaTsTeyLXseDG"></script>
+  <noscript><link rel="stylesheet" href="https://bbpp222006.github.io/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://bbpp222006.github.io" title="Glider的博客"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#f90" viewBox="0 0 96 96" width="28" height="28"><path stroke-width="14" d="M14 99 46 7h4l32 92"/><path stroke-width="9" d="M-3 82c43-26 59-26 102 0"/><path stroke-linecap="round" stroke-width="1.5" d="M94 72v7m-5-9.8v7m-5-9.8v7.1M79 64v7M63 57.7v7m-5-8.2v7m-5-7.8v7m-5-7.2v7m-5-6.7v7m-5-6.3v7m-5-5.8v7M17 64v7m-5-4.6v7m-5-4.2v7M2 72v7"/></svg>bridge</a></h1></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://bbpp222006.github.io/about/"> About </a></li><li><a class="s110" href="https://bbpp222006.github.io/archive/"> Posts </a></li><li><a class="s110" href="https://bbpp222006.github.io/tags/"> Tags </a></li><li><i type="reset" id="mode" class="js svgs adjust"></i></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="svgs search"></button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://bbpp222006.github.io/docker容器ipv6设置/">docker容器ipv6设置</a></h1>
+
+      <span class="s95"> Glider <span class="rpad"></span> 三月 26, 2022 <span class="rpad"></span></span>
+
+    
+
+
+<h1 id="前言">前言</h1>
+<p>在使用qbit等bt下载软件时，如果有ipv6地址，节点的连接性将会更好，下载速度更快，peer也会更多。<del>刷流更快</del></p>
+<p>由于docker对于ipv6的支持并不是特别好，不能像ipv4一样，为创建的容器自动分配ipv6地址，或者进行nat等操作。</p>
+<p>但是对于一个所有软件都装在docker内的mjj来说，这是不能容忍的事情。</p>
+<p>在查阅了诸多资料之后，这里记录一下docker如何完美开启ipv6，并且为容器自动进行v6nat等操作。</p>
+<h2 id="环境验证">环境验证</h2>
+<p>为了开启docker的ipv6支持，首先你的host主机必须要有能用的ipv6地址（废话）</p>
+<p>这里用北邮人进行验证</p>
+<pre class="z-code"><code><span class="z-text z-plain">ping6 byr.pt
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">PING byr.pt(2001:da8:215:4078:250:56ff:fe97:654d (2001:da8:215:4078:250:56ff:fe97:654d)) 56 data bytes
+</span><span class="z-text z-plain">64 bytes from 2001:da8:215:4078:250:56ff:fe97:654d (2001:da8:215:4078:250:56ff:fe97:654d): icmp_seq=1 ttl=48 time=88.0 ms
+</span><span class="z-text z-plain">64 bytes from 2001:da8:215:4078:250:56ff:fe97:654d (2001:da8:215:4078:250:56ff:fe97:654d): icmp_seq=2 ttl=48 time=86.7 ms
+</span><span class="z-text z-plain">64 bytes from 2001:da8:215:4078:250:56ff:fe97:654d (2001:da8:215:4078:250:56ff:fe97:654d): icmp_seq=3 ttl=48 time=81.6 ms
+</span><span class="z-text z-plain">64 bytes from 2001:da8:215:4078:250:56ff:fe97:654d (2001:da8:215:4078:250:56ff:fe97:654d): icmp_seq=4 ttl=48 time=86.0 ms
+</span></code></pre>
+<p>接下来用busybox容器使用host网络进行验证</p>
+<pre class="z-code"><code><span class="z-text z-plain">docker run --rm -it --net=host busybox /bin/sh
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">ping6 byr.pt
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">PING byr.pt(2001:da8:215:4078:250:56ff:fe97:654d (2001:da8:215:4078:250:56ff:fe97:654d)) 56 data bytes
+</span><span class="z-text z-plain">64 bytes from 2001:da8:215:4078:250:56ff:fe97:654d 
+</span></code></pre>
+<p>如果以上输出的东西都正常，说明你的docker安装和host的ipv6都正常。</p>
+<p>如果后续步骤出现了什么问题，一定要使用上述两种方式检查网络的连通性，以便debug</p>
+<h2 id="正文">正文</h2>
+<p>经过上一节的验证后，你的ipv6地址应该是没问题了，接下来对docker的网络进行配置</p>
+<pre class="z-code"><code><span class="z-text z-plain">vim /etc/docker/daemon.json #加入以下配置的时候，注意别破坏了原来的结构，例如镜像啥的
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">{
+</span><span class="z-text z-plain">  &quot;experimental&quot;: true,
+</span><span class="z-text z-plain">  &quot;ipv6&quot;: true,
+</span><span class="z-text z-plain">  &quot;ip6tables&quot;: true,
+</span><span class="z-text z-plain">  &quot;fixed-cidr-v6&quot;: &quot;fc00:100::/24&quot;
+</span><span class="z-text z-plain">}
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">systemctl daemon-reload
+</span><span class="z-text z-plain">systemctl restart docker
+</span></code></pre>
+<p>完事后查看主机本身是否还能连上ipv6，方式如同第一节。</p>
+<p>如果没什么问题，则恭喜你，完成了设置。</p>
+<p>如果发现主机的ipv6失效了，ping不通，则尝试以下补救措施：</p>
+<ol>
+<li>编辑 <code>/etc/sysctl.conf</code>文件，加入以下字段</li>
+</ol>
+<pre class="z-code"><code><span class="z-text z-plain">net.ipv6.conf.ens3.accept_ra = 2
+</span><span class="z-text z-plain"># 注意，这里的ens3是你的网卡名称，可以使用`ip addr`等命令进行查看，看情况进行修改
+</span></code></pre>
+<ol start="2">
+<li><code>sudo sysctl -p</code> 使设置生效</li>
+</ol>
+<p>之后再尝试ping6，查看主机的ipv6是否恢复</p>
+<h2 id="最后">最后</h2>
+<p>此时你的docker应该可以无感的进行ipv6分配了，我们测试一下：</p>
+<pre class="z-code"><code><span class="z-text z-plain">docker run --rm -it busybox /bin/sh
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">ping6 byr.pt
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">PING byr.pt(2001:da8:215:4078:250:56ff:fe97:654d (2001:da8:215:4078:250:56ff:fe97:654d)) 56 data bytes
+</span><span class="z-text z-plain">64 bytes from 2001:da8:215:4078:250:56ff:fe97:654d 
+</span></code></pre>
+<h2 id="结语">结语</h2>
+<p>这里只是记录了我的折腾过程，由于docker的ipv6不完善，可能会出现更多奇奇怪怪的问题。</p>
+<p>暂时能用就行……</p>
+
+      <nav>
+        <div>
+          <a href="https://bbpp222006.github.io/2024-1-17-博客迁移随笔/">&#8249; 博客迁移随笔</a>
+        </div>
+        <div>
+          <a href="https://bbpp222006.github.io/docker镜像部署/"> docker镜像部署 &#8250;</a>
+        </div>
+      </nav>
+    <script src="https://utteranc.es/client.js"
+    repo="bbpp222006/bbpp222006.github.io"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+    </script>
+    </article>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav><div><a type="application/atom+xml" href="https://bbpp222006.github.io/atom.xml" target="_blank" title="Glider的博客 Atom/RSS Feed"><i type="Button" class="svg rss" title="Glider的博客 Atom/RSS Feed"></i></a><a class="js m-protected" href="#emluYW5feGlhbmdAaHVzdC5lZHUuY24=" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a><a href="https://github.com/bbpp222006/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <p class="s90"> &copy; <span id="year">2024</span> Glider的博客</p>
+      <nav>
+        <a class="s90" href="https://bbpp222006.github.io/about/"> About </a>
+        <a class="s90" href="https://bbpp222006.github.io/contact/"> Contact </a>
+        <a class="s90" href="https://bbpp222006.github.io/privacy/"> Privacy </a>
+        <a class="s90" href="https://bbpp222006.github.io/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer><span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top"><i class="svgs svgh angu"></i></a>
+</span>
+</body>
+</html>
