@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://bbpp222006.github.io/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://bbpp222006.github.io/abridge.css?h=d34a40bc4242778b5e29" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://bbpp222006.github.io" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://bbpp222006.github.io/manifest.min.json" />
+  <link rel="mask-icon" href="https://bbpp222006.github.io/safari-pinned-tab.svg" color="#ff9900" />
+  <link rel="icon" type="image/svg+xml" href="https://bbpp222006.github.io/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://bbpp222006.github.io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://bbpp222006.github.io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://bbpp222006.github.io/favicon-16x16.png" />
+  <link rel="alternate" type="application/atom+xml" title="Glider的博客 Atom/RSS Feed" href="https://bbpp222006.github.io/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Pillow图像处理笔记 | Glider的博客</title>
+  <meta name="author" content="Glider" />
+  <meta name="copyright" content="Glider的博客" />
+  <meta name="description" content="I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?" />
+  <link rel="canonical" href="https://bbpp222006.github.io/pillow图像处理笔记/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta name="google-site-verification" content="Your Google Site verification code." />
+  <meta name="msvalidate.01" content="Your Bing Site verification code." />
+  <meta property="og:url" content="https://bbpp222006.github.io/pillow图像处理笔记/" />
+  <meta name="twitter:url" content="https://bbpp222006.github.io/pillow图像处理笔记/" />
+  <meta property="og:description" content="I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?" />
+  <meta name="twitter:description" content="I thought what I&#x27;d do was,I&#x27;d pretend I was one of those deaf-mutes. or should i?" />
+  <meta property="og:title" content="Pillow图像处理笔记 | Glider的博客" />
+  <meta name="twitter:title" content="Pillow图像处理笔记 | Glider的博客" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://bbpp222006.github.io/banner.png" />
+  <meta property="og:image" content="https://bbpp222006.github.io/banner.png" />
+  <meta property="og:site_name" content="Glider的博客" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2019-10-31" />
+  <meta name="twitter:site" content="@your-user-name" />
+  <meta name="twitter:creator" content="@your-user-name" />
+  <script defer src="https://bbpp222006.github.io/js/abridge.min.js?h=1a12cf684ae4ed40434f" integrity="sha384-ZsreuwU2rKTp7gC4bTf5sYz+3AjMym99XDa/B5wa08fCzLVVX+NDaTsTeyLXseDG"></script>
+  <noscript><link rel="stylesheet" href="https://bbpp222006.github.io/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://bbpp222006.github.io" title="Glider的博客"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#f90" viewBox="0 0 96 96" width="28" height="28"><path stroke-width="14" d="M14 99 46 7h4l32 92"/><path stroke-width="9" d="M-3 82c43-26 59-26 102 0"/><path stroke-linecap="round" stroke-width="1.5" d="M94 72v7m-5-9.8v7m-5-9.8v7.1M79 64v7M63 57.7v7m-5-8.2v7m-5-7.8v7m-5-7.2v7m-5-6.7v7m-5-6.3v7m-5-5.8v7M17 64v7m-5-4.6v7m-5-4.2v7M2 72v7"/></svg>bridge</a></h1></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://bbpp222006.github.io/about/"> About </a></li><li><a class="s110" href="https://bbpp222006.github.io/archive/"> Posts </a></li><li><a class="s110" href="https://bbpp222006.github.io/tags/"> Tags </a></li><li><i type="reset" id="mode" class="js svgs adjust"></i></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="svgs search"></button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://bbpp222006.github.io/pillow图像处理笔记/">Pillow图像处理笔记</a></h1>
+
+      <span class="s95"> Glider <span class="rpad"></span> 十月 31, 2019 <span class="rpad"></span></span>
+
+    
+
+
+<h1 id="前言">前言</h1>
+<p>自从有了博客，需要更新背景图片和添加新图，发现图片需要压缩，亮度调整等一系列操作才能更适合网页。于是捡起pillow，写了一个批处理py脚本。这里记录一下相关用法，以后可能补充。</p>
+<p><a rel="noopener" target="_blank" href="https://pillow.readthedocs.io/en/latest/index.html">官方手册</a></p>
+<p><a rel="noopener" target="_blank" href="https://pillow-cn.readthedocs.io/zh_CN/latest/">中文文档</a>
+这个好像不完整……大家还是看原版吧……</p>
+<h2 id="可用的压缩以及亮度调整代码">可用的压缩以及亮度调整代码</h2>
+<pre class="z-code"><code><span class="z-text z-plain">import os
+</span><span class="z-text z-plain">from PIL import Image,ImageEnhance,ImageStat
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">origin_path = &#39;pic/origin/&#39;
+</span><span class="z-text z-plain">edited_path = &#39;pic/edited/&#39;
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">def get_FileSize(filePath):
+</span><span class="z-text z-plain">    fsize = os.path.getsize(filePath)
+</span><span class="z-text z-plain">    fsize = fsize/float(1024*1024)
+</span><span class="z-text z-plain">    return round(fsize,5)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">def get_name_path(origin_path = origin_path):
+</span><span class="z-text z-plain">    path_list = {}
+</span><span class="z-text z-plain">    for pic in os.listdir(origin_path):
+</span><span class="z-text z-plain">        pic_name =  os.path.splitext(pic)[0]
+</span><span class="z-text z-plain">        path_list[pic_name] = origin_path+ str(pic)
+</span><span class="z-text z-plain">    return path_list
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">def change_dark(pic_content): #传入待定
+</span><span class="z-text z-plain">    bright_origin = ImageStat.Stat(pic_content.convert(&#39;L&#39;)).mean[0]
+</span><span class="z-text z-plain">    print(bright_origin)
+</span><span class="z-text z-plain">    brightness = 50 / bright_origin
+</span><span class="z-text z-plain">    dark_pic = ImageEnhance.Brightness(pic_content).enhance(brightness)
+</span><span class="z-text z-plain">    return dark_pic
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">def change_small(pic_content):#传入待定
+</span><span class="z-text z-plain">    pass
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">path_list = get_name_path()
+</span><span class="z-text z-plain">print(path_list)
+</span><span class="z-text z-plain">for pic_name in path_list:
+</span><span class="z-text z-plain">    print(pic_name,path_list[pic_name])
+</span><span class="z-text z-plain">    pic = Image.open(path_list[pic_name]).convert(&#39;RGB&#39;)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">    print(get_FileSize(path_list[pic_name]))
+</span><span class="z-text z-plain">    # pic.show()
+</span><span class="z-text z-plain">    pic = change_dark(pic)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">    save_path = edited_path + pic_name +&#39;.jpg&#39;
+</span><span class="z-text z-plain">    pic.save(save_path,quality=80)
+</span><span class="z-text z-plain">    print(get_FileSize(save_path) )
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">    pic = Image.open(save_path)
+</span><span class="z-text z-plain">    # pic.show()
+</span><span class="z-text z-plain">
+</span></code></pre>
+<h2 id="用法笔记">用法笔记</h2>
+<p>PIL中所涉及的基本概念有如下几个：通道（bands）、模式（mode）、尺寸（size）、坐标系统（coordinate system）、调色板（palette）、信息（info）和滤波器（filters）。</p>
+<h3 id="通道">通道</h3>
+<pre class="z-code"><code><span class="z-text z-plain">&gt;&gt;&gt;from PIL import Image
+</span><span class="z-text z-plain">&gt;&gt;&gt; im= Image.open(&#39;1.jpg&#39;)
+</span><span class="z-text z-plain">&gt;&gt;&gt;im.getbands()
+</span><span class="z-text z-plain">(&#39;R&#39;, &#39;G&#39;, &#39;B&#39;)
+</span></code></pre>
+<blockquote>
+<p>RGB到灰度图转换公式：Y = 0.299 R +  0.587 G + 0.114 B</p>
+</blockquote>
+<h3 id="模式">模式</h3>
+<p>图像的模式定义了图像的类型和像素的位宽。当前支持如下模式：</p>
+<p>1：1位像素，表示黑和白，但是存储的时候每个像素存储为8bit。<br />
+L：8位像素，表示黑和白。<br />
+P：8位像素，使用调色板映射到其他模式。<br />
+RGB：3x8位像素，为真彩色。<br />
+RGBA：4x8位像素，有透明通道的真彩色。<br />
+CMYK：4x8位像素，颜色分离。<br />
+YCbCr：3x8位像素，彩色视频格式。<br />
+I：32位整型像素。<br />
+F：32位浮点型像素。</p>
+<pre class="z-code"><code><span class="z-text z-plain">&gt;&gt;&gt; im.mode
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">&#39;RGB&#39;
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">&gt;&gt;&gt; im = im.convert(&quot;I&quot;)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">&gt;&gt;&gt; im.mode
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">&#39;I&#39;
+</span></code></pre>
+<h3 id="尺寸">尺寸</h3>
+<pre class="z-code"><code><span class="z-text z-plain">&gt;&gt;&gt;im.size
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">(800, 450)
+</span></code></pre>
+<h3 id="坐标">坐标</h3>
+<p>PIL使用笛卡尔像素坐标系统，坐标(0，0)位于左上角。注意：坐标值表示像素的角；位于坐标（0，0）处的像素的中心实际上位于（0.5，0.5）。</p>
+<h2 id="高阶操作">高阶操作</h2>
+<h3 id="数据增强模块ImageEnhance">数据增强模块<code>ImageEnhance</code></h3>
+<ol>
+<li>亮度</li>
+</ol>
+<pre class="z-code"><code><span class="z-text z-plain">enh_bri = ImageEnhance.Brightness(image)
+</span><span class="z-text z-plain">brightness = 1.5 #这个是变亮，0.8就是变暗
+</span><span class="z-text z-plain">image_brightened1 = enh_bri.enhance(brightness)
+</span></code></pre>
+<ol start="2">
+<li>色彩饱和度：彩度除以明度，指色彩的鲜艳程度，也称色彩的纯度；</li>
+</ol>
+<pre class="z-code"><code><span class="z-text z-plain">enh_col = ImageEnhance.Color(image)
+</span><span class="z-text z-plain">color = 1.5 #增强，0.8减弱
+</span><span class="z-text z-plain">image_colored1 = enh_col.enhance(color)
+</span></code></pre>
+<ol start="3">
+<li>锐度：是反映图像平面清晰度和图像边缘锐利程度的一个指标。</li>
+</ol>
+<pre class="z-code"><code><span class="z-text z-plain">enh_sha = ImageEnhance.Sharpness(image)
+</span><span class="z-text z-plain">sharpness = 3.0
+</span><span class="z-text z-plain">image_sharped1 = enh_sha.enhance(sharpness)
+</span></code></pre>
+<ol start="4">
+<li>对比度</li>
+</ol>
+<pre class="z-code"><code><span class="z-text z-plain">enh_con = ImageEnhance.Contrast(image)
+</span><span class="z-text z-plain">contrast = 1.5
+</span><span class="z-text z-plain">image_contrasted1 = enh_con.enhance(contrast)
+</span></code></pre>
+<h3 id="数据统计模块ImageStat">数据统计模块<code>ImageStat</code></h3>
+<p><code>ImageStat.Stat(image, mask)⇒ Stat instance</code></p>
+<p>含义：计算给定图像的统计值。如果变量mask被赋值，将只针对变量mask所定义的区域进行统计。</p>
+<pre class="z-code"><code><span class="z-text z-plain">&gt;&gt;&gt; stat =ImageStat.Stat(im)
+</span><span class="z-text z-plain"> 
+</span><span class="z-text z-plain">&gt;&gt;&gt; stat.extrema #获取图像中每个通道的最大值和最小值。
+</span><span class="z-text z-plain"> 
+</span><span class="z-text z-plain">[(2, 255), (0, 255), (0, 255)]
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">&gt;&gt;&gt; stat.count #获取图像中每个通道的像素个数。
+</span><span class="z-text z-plain"> 
+</span><span class="z-text z-plain">[786432, 786432,786432] 
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">&gt;&gt;&gt; stat.sum #每个通道求和
+</span><span class="z-text z-plain"> 
+</span><span class="z-text z-plain">[90912466.0,75765120.0, 59027727.0]
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">&gt;&gt;&gt;stat.sum2 #每个通道求平方和
+</span><span class="z-text z-plain"> 
+</span><span class="z-text z-plain">[14449895138.0,12289898764.0, 9141884969.0]
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">&gt;&gt;&gt;stat.mean #求平均
+</span><span class="z-text z-plain"> 
+</span><span class="z-text z-plain">[115.60117848714192,96.34033203125, 75.05763626098633]
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">&gt;&gt;&gt;stat.median #中位数
+</span><span class="z-text z-plain"> 
+</span><span class="z-text z-plain">[119, 80, 40]
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">&gt;&gt;&gt;stat.rms #均方根值
+</span><span class="z-text z-plain"> 
+</span><span class="z-text z-plain">[135.55069835243268,125.00965724006934, 107.81701101697355]
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">&gt;&gt;&gt;stat.var #方差
+</span><span class="z-text z-plain"> 
+</span><span class="z-text z-plain">[5010.359356216148,6345.954827388127, 5990.859103547667]
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">&gt;&gt;&gt;stat.stddev #标准差
+</span><span class="z-text z-plain"> 
+</span><span class="z-text z-plain">[70.78389192617306,79.66150153862358, 77.40064020114863]
+</span></code></pre>
+<h1 id="结语">结语</h1>
+<p>鉴于许多猛男不会ps~~审美猛男化~~，就不需要更高阶的操作了。以后如有需要就再更新，美滋滋。</p>
+
+      <nav>
+        <div>
+          <a href="https://bbpp222006.github.io/factorio服务器搭建记录/">&#8249; factorio服务器搭建</a>
+        </div>
+        <div>
+          <a href="https://bbpp222006.github.io/常用服务器脚本命令收集/"> 常用服务器命令备份 &#8250;</a>
+        </div>
+      </nav>
+    <script src="https://utteranc.es/client.js"
+    repo="bbpp222006/bbpp222006.github.io"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+    </script>
+    </article>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav><div><a type="application/atom+xml" href="https://bbpp222006.github.io/atom.xml" target="_blank" title="Glider的博客 Atom/RSS Feed"><i type="Button" class="svg rss" title="Glider的博客 Atom/RSS Feed"></i></a><a class="js m-protected" href="#emluYW5feGlhbmdAaHVzdC5lZHUuY24=" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a><a href="https://github.com/bbpp222006/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <p class="s90"> &copy; <span id="year">2024</span> Glider的博客</p>
+      <nav>
+        <a class="s90" href="https://bbpp222006.github.io/about/"> About </a>
+        <a class="s90" href="https://bbpp222006.github.io/contact/"> Contact </a>
+        <a class="s90" href="https://bbpp222006.github.io/privacy/"> Privacy </a>
+        <a class="s90" href="https://bbpp222006.github.io/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer><span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top"><i class="svgs svgh angu"></i></a>
+</span>
+</body>
+</html>
